@@ -58,7 +58,7 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 	font-weight: bold;
 }
 
@@ -74,7 +74,7 @@ nav {
 	display: flex;
 	align-items: center;
 	height: 60px;
-	width: 876px;
+	width: 100%;
 	margin-bottom: 15px;
 	justify-content: center;
 	justify-content: space-between;
@@ -86,7 +86,7 @@ nav {
 }
 
 a {
-	color: black;
+	color: grey;
 	text-decoration: none;
 }
 .indexheader {
@@ -103,7 +103,6 @@ a {
 }
 div .buttoni {
 	font-size: 18px;
-	transform: translate(0px, -35px);
 	width: 190px;
 	background: white;
 	border: solid black 1px;
@@ -122,7 +121,7 @@ div .buttoni {
 	width: 49%;
 }
 .middle-img {
-	margin-right: auto;
+	width: 100%;
 }
 .botcontent {
 	display: flex;
@@ -130,7 +129,7 @@ div .buttoni {
 	height: 190px;
 }
 .third {
-	width: 33%;
+	width: 30%;
 }
 .contact {
 	padding-top: 35px;
@@ -189,7 +188,8 @@ footer {
 }
 .botcontent {
 	display: flex;
-	height: 200px;
+	height: 230px;
+	justify-content: space-between;
 }
 .botcontentflexchild {
 	display: flex;
@@ -224,13 +224,13 @@ and (max-device-width : 800px) {
 	
 	nav {
 		flex-wrap: wrap;
-		width: 100%;
+		width: 95%;
 		justify-content: center;
 		margin-bottom: 50px;
 	}
 	.navlinks {order: 2;}
 	.logo {
-		order: 1;
+		order: 0;
 		text-align:center;
 		margin-bottom: 50px;
 		margin-top: 25px;
@@ -238,8 +238,99 @@ and (max-device-width : 800px) {
 	.circleimage{
 		display:none;
 	}
+	.everything {
+		max-width: 95%;
+		margin: 0 2%;
+		
+	}
+	h1 {
+		text-align: center;
+		display: inline;
+		width: 95%;
+	}
+	.h1button {
+		width: 95%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+	}
 	
 }
 @media only screen 
 and (max-device-width : 500px) {
+	.everything {
+		max-width: 100%;
+		margin: 0 5%;
+	}
+	nav {
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+		margin-bottom: 50px;
+		height: 300px;
+		margin-bottom: 0;
+		height: 350px;
+	}
+	.navlinks {
+		order: 2;
+		flex-direction: column;
+		text-align: center;
+		
+	}
+	.logo {
+		order: 0;
+		text-align:center;
+		margin: 20px 0;
+	}
+	.navlinks > a {
+		width: 100%;
+		border-top: 1px solid grey;
+		border-bottom: 1px solid grey;
+		font-size: 25px;
+		height: 52px;
+		text-align: center;
+	}
+
+	.circleimage {
+		display:none;
+	}
+
+	h1 {
+		text-align: center;
+		width: 100%;
+	}
+	.h1button {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.indexheader {
+		height: 400px;
+	}
+	.middle-img {
+		height: 100px;
+	}
+	.topcontent, .botcontent {
+		flex-wrap: wrap;
+		border: none;
+	}
+	.half, .third {
+		width: 100%;	
+	}
+	h3 {
+		
+	}
+	.topcontent {
+		height: 275px;
+	}
+
+	.botcontent {
+		height: 400px;
+	}
+	.maincontent {
+		padding-top: 40px;
+		border-top: 1px solid black;
+	}
 }
