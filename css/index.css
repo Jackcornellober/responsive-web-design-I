@@ -261,7 +261,7 @@ and (max-device-width : 800px) {
 and (max-device-width : 500px) {
 	.everything {
 		max-width: 100%;
-		margin: 0 5%;
+		margin: 0;
 	}
 	nav {
 		flex-wrap: wrap;
@@ -288,8 +288,8 @@ and (max-device-width : 500px) {
 		border-top: 1px solid grey;
 		border-bottom: 1px solid grey;
 		font-size: 25px;
-		height: 52px;
 		text-align: center;
+		padding: 12px 0;
 	}
 
 	.circleimage {
@@ -308,6 +308,7 @@ and (max-device-width : 500px) {
 	}
 	.indexheader {
 		height: 400px;
+		margin: 0 5%;
 	}
 	.middle-img {
 		height: 100px;
@@ -332,5 +333,9 @@ and (max-device-width : 500px) {
 	.maincontent {
 		padding-top: 40px;
 		border-top: 1px solid black;
+		margin: 0 5%;
+	}
+	.contact {
+		margin: 0 5%;
 	}
 }
