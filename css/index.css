@@ -218,9 +218,7 @@ and (max-device-width : 1024px)  {
 	}
 */
 
-@media only screen 
-and (min-device-width : 501px)
-and (max-device-width : 800px) {
+@media (max-width: 800px) {
 	
 	nav {
 		flex-wrap: wrap;
@@ -257,8 +255,7 @@ and (max-device-width : 800px) {
 	}
 	
 }
-@media only screen 
-and (max-device-width : 500px) {
+@media (max-width: 500px) {
 	.everything {
 		max-width: 100%;
 		margin: 0;
